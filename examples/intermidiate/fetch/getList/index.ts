@@ -37,6 +37,7 @@ function showListBreeds(){
                 <td>${item.origin}</td>
                 <td>${item.coat}</td>
                 <td>${item.pattern}</td>
+                <td><a href="#" rel="noopener" target="_blank" >Go</a></td>
               </tr> `
             })
            }) 

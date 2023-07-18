@@ -23,7 +23,7 @@ function showListBreeds() {
         getListBreeds().then(function (list) {
             load.classList.add('is-hidden');
             return list.map(function (item) {
-                breedsTable.innerHTML += "<tr> \n                <td>".concat(item.breed, "</td>\n                <td>").concat(item.country, "</td>\n                <td>").concat(item.origin, "</td>\n                <td>").concat(item.coat, "</td>\n                <td>").concat(item.pattern, "</td>\n              </tr> ");
+                breedsTable.innerHTML += "<tr> \n                <td>".concat(item.breed, "</td>\n                <td>").concat(item.country, "</td>\n                <td>").concat(item.origin, "</td>\n                <td>").concat(item.coat, "</td>\n                <td>").concat(item.pattern, "</td>\n                <td><a href=\"#\" rel=\"noopener\" target=\"_blank\" >Go</a></td>\n              </tr> ");
             });
         });
     }, 3000);
