@@ -8,24 +8,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
-
-     <section class="card m-4 card-content">
-        <h2 class="title is-2">Base 64 to Image</h2>
-
-        <a href="../../index.html" class="is-small ">Go home</a>
-
-        <div class="is-flex is-flex-direction-column is-justify-content-center my-3">
-            <textarea name="" id="payload" cols="30" rows="10" class="mb-3"></textarea>
-    
-        
-            <button id="convert" class="button is-primary">Convert</button>
-        </div>
-    
-        
-     </section>
+    <section class="container pt-3">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+             <h2 class="title is-2" class="navbar-item">Base 64 to Image</h2>
+            </div>
+            <div class="navbar-menu">
+                <a href="../../../index.html" class="navbar-end button is-light" >Go home</a>
+              </div>
+          </nav>
+            <div class="columns is-flex is-justify-content-center">
+              <div class="column  is-6">
+                <section class="card m-4 card-content">  
+                    <h3 class="title is-3" class="navbar-item">Enter a Base 64</h3>
+                    <form class="is-flex is-flex-direction-column">
+                        <label for="payload">Base 64</label>
+                        <textarea name="payload" id="payload" cols="30" rows="10" class="mb-3"></textarea>
+                        <button id="convert" type="button" class="button is-primary">Convert to image</button>
+                    </form>
+                    <div id="bodyDiv"></div>
+                 </section>
+              </div>
+            </div>
+    </section>
     <script>var exports = {};</script>
     <script src="./index.js"></script>
-    
-    
 </body>
 </html>

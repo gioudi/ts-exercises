@@ -8,23 +8,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
-
-     <section class="card m-4 card-content">
-        <h2 class="title is-2">Convert string to array</h2>
-
-        <a href="../../index.html" class="is-small">Go home</a>
-
-        <input type="text" placeholder="Enter a text" class="input m-1" name="cString" id="cString">
-
-    
-        <button id="convertS" class="button is-primary">Convert</button>
-    
-        <div id="bodyDiv"></div>
-     
-     </section>
+    <section class="container pt-3">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+             <h2 class="title is-2" class="navbar-item">Convert string to array</h2>
+            </div>
+            <div class="navbar-menu">
+                <a href="../../../index.html" class="navbar-end button is-light" >Go home</a>
+              </div>
+          </nav>
+            <div class="columns is-flex is-justify-content-center">
+              <div class="column  is-6">
+                <section class="card m-4 card-content">  
+                    <h3 class="title is-3" class="navbar-item">Enter a String</h3>
+                    <form class="is-flex is-flex-direction-column">
+                        <label for="cString">Number:</label>
+                        <input type="text" placeholder="Enter a text" class="input m-1" name="cString" id="cString">
+                        <button id="convertS" type="button" class="button is-primary">Convert</button>
+                    </form>
+                    <div id="bodyDiv"></div>
+                 </section>
+              </div>
+            </div>
+    </section>
     <script>var exports = {};</script>
     <script src="./index.js"></script>
-    
-    
 </body>
 </html>
