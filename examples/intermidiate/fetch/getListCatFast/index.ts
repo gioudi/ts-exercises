@@ -42,8 +42,6 @@ function showListBreeds(){
             })
            }) 
      }, 3000);
-    
-    
 }
 
 document.addEventListener('DOMContentLoaded', ()=>{
