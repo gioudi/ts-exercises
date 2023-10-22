@@ -8,25 +8,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body >
-
-     <section class="card m-4 card-content">
-        <h2 class="title is-2">Is multiple of 3 or 7</h2>
-
-        <a href="../../index.html" class="is-small">Go home</a>
-
-        <input type="text" class="input m-1" name="chosenNumber" id="chosenNumber">
-        
-
-    
-        <button id="validateNumber" class="button mb-1 is-primary">Validate</button>
-    
-        <div id="bodyDiv"></div>
- 
-
-     </section>
+    <section class="container pt-3">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+             <h2 class="title is-2" class="navbar-item">Is multiple of 3 or 7</h2>
+            </div>
+            <div class="navbar-menu">
+                <a href="../../../index.html" class="navbar-end button is-light" >Go home</a>
+              </div>
+          </nav>
+            <div class="columns is-flex is-justify-content-center">
+              <div class="column  is-6">
+                <section class="card m-4 card-content">  
+                    <h3 class="title is-3" class="navbar-item">Enter a Number</h3>
+                    <form class="is-flex is-flex-direction-column">
+                        <label for="chosenNumber">Number:</label>
+                        <input type="text" class="input m-1" name="chosenNumber" id="chosenNumber">
+                        <button id="validateNumber" type="button" class="button is-primary">Validate</button>
+                    </form>
+                    <div id="bodyDiv"></div>
+                 </section>
+              </div>
+            </div>
+    </section>
     <script>var exports = {};</script>
-    <script src="./index.js"></script>
-    
-    
+    <script src="./index.js"></script>  
 </body>
 </html>

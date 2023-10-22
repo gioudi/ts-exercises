@@ -11,34 +11,37 @@
 </head>
 
 <body>
-  <section class="section">
-    <h2 class="title is-2 mb-3">Get list users from Json Server Fetch</h2>
-
-    <a href="../../../../index.html" class="is-small">Go home</a>
-
-    <div class=" is-align-content-center is-align-items-center is-fullheight" id="load">
-        <progress class="progress is-small is-primary" max="100">15%</progress> 
-    </div>
-
-    <table class="table is-striped is-hoverable is-fullwidth">
-      <thead>
-        <tr>
-          <td class="has-text-weight-bold is-capitalized">id</td>
-          <td class="has-text-weight-bold is-capitalized">name</td>
-          <td class="has-text-weight-bold is-capitalized">username</td>
-          <td class="has-text-weight-bold is-capitalized">email</td>
-          <td class="has-text-weight-bold is-capitalized">address</td>
-          <td class="has-text-weight-bold is-capitalized">phone</td>
-          <td class="has-text-weight-bold is-capitalized">website</td>
-          <td class="has-text-weight-bold is-capitalized">company</td>
-          <td class="has-text-weight-bold is-capitalized">detail</td>
-        </tr>
-      </thead>
-      <tbody id="usersTable">
-
-      </tbody>
-    </table>
-    <section>
+  <section class="container pt-3">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+         <h2 class="title is-2" class="navbar-item">Get list users from Json Server Fetch</h2>
+        </div>
+        <div class="navbar-menu">
+            <a href="../../../index.html" class="navbar-end button is-light" >Go home</a>
+          </div>
+      </nav>
+        <div class=" is-align-content-center is-align-items-center is-fullheight" id="load">
+          <progress class="progress is-small is-primary" max="100">15%</progress> 
+        </div>  
+        
+        <table class="table is-striped is-hoverable is-fullwidth" id="table">
+            <thead>
+              <tr>
+                <td class="has-text-weight-bold is-capitalized">id</td>
+                <td class="has-text-weight-bold is-capitalized">name</td>
+                <td class="has-text-weight-bold is-capitalized">username</td>
+                <td class="has-text-weight-bold is-capitalized">email</td>
+                <td class="has-text-weight-bold is-capitalized">address</td>
+                <td class="has-text-weight-bold is-capitalized">phone</td>
+                <td class="has-text-weight-bold is-capitalized">website</td>
+                <td class="has-text-weight-bold is-capitalized">company</td>
+                <td class="has-text-weight-bold is-capitalized">detail</td>
+              </tr>
+            </thead>
+            <tbody id="usersTable">
+            </tbody>
+        </table>
+  </section>
       <script>var exports = {};</script>
       <script src="./index.js"></script>
 </body>
