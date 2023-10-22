@@ -8,24 +8,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
+    <section class="container pt-3">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+             <h2 class="title is-2" class="navbar-item">Find a triangle area</h2>
+            </div>
+            <div class="navbar-menu">
+                <a href="../../../index.html" class="navbar-end button is-light" >Go home</a>
+              </div>
+          </nav>
+            <div class="columns is-flex is-justify-content-center">
+              <div class="column  is-6">
+                <section class="card m-4 card-content">  
+                    <h3 class="title is-3" class="navbar-item">Area Form</h3>
+                    <form>
+                        <label for="sideOne">Side one</label>
+                        <input type="text" class="input m-1" name="sideOne" id="sideOne">
+                        <label for="sideTwo">Side two</label>
+                        <input type="text" class="input m-1" name="sideTwo" id="sideTwo">
+                        <label for="sideThree">Side three</label>
+                        <input type="text" class="input m-1 mb-3" name="sideThree" id="sideThree">
+                        <button id="getArea" type="button"  class="button  is-flex is-primary">Get area</button>
+                    </form>
+                    <div id="bodyDiv"></div>
+                 </section>
+              </div>
+            </div>
+    </section>
 
-     <section class="card m-4 card-content">
-        <h2 class="title is-2">Find a triangle area</h2>
-
-        <a href="../../index.html" class="is-small">Go home</a>
-
-        <input type="text" class="input m-1" name="sideOne" id="sideOne">
-        <input type="text" class="input m-1" name="sideTwo" id="sideTwo">
-        <input type="text" class="input m-1" name="sideThree" id="sideThree">
-  
-          
-        <button id="getArea" class="button is-primary">Get area</button>
-
-         
-        <div id="bodyDiv"></div>
-   
-
-     </section>
     <script>var exports = {};</script>
     <script src="./index.js"></script>
     
