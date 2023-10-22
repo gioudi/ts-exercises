@@ -38,7 +38,7 @@ function showListUsers(){
                 <td>${item.phone}</td>
                 <td>${item.website}</td>
                 <td>${item.company.name}</td>
-                <td><a href="#" rel="noopener" target="_blank" >Detail</a></td>
+                <td><a href="../getListUserJsonServer/index.html" rel="noopener" target="_blank" >Detail</a></td>
               </tr> `
             })
            }) 
