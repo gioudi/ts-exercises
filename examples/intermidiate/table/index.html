@@ -11,23 +11,30 @@
 </head>
 
 <body>
-  <section class="section">
-    <h2 class="title is-2">TypeScript Table</h2>
-
-    <a href="../../index.html" class="is-small">Go home</a>
-
-    <table class="table is-striped is-hoverable is-fullwidth">
-      <thead>
-        <tr>
-          <th><abbr title="Position">ID</abbr></th>
-          <th>Name</th>
-        </tr>
-      </thead>
-      <tbody id="body-table">
-
-      </tbody>
-    </table>
-    <section>
+  <section class="container pt-3">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+         <h2 class="title is-2" class="navbar-item">TypeScript Table</h2>
+        </div>
+        <div class="navbar-menu">
+            <a href="../../../../index.html" class="navbar-end button is-light" >Go home</a>
+          </div>
+      </nav>
+        <div class=" is-align-content-center is-align-items-center is-fullheight" id="load">
+          <progress class="progress is-small is-primary" max="100">15%</progress> 
+        </div>  
+        
+        <table class="table is-striped is-hoverable is-fullwidth" id="table">
+            <thead>
+              <tr>
+                <th><abbr title="Position">ID</abbr></th>
+                <th>Name</th>
+              </tr>
+            </thead>
+            <tbody id="body-table">
+            </tbody>
+        </table>
+  </section>
       <script>var exports = {};</script>
       <script src="./index.js"></script>
 </body>
